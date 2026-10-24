@@ -60,12 +60,13 @@
   <ul>
     <li>Las imágenes de las páginas que escaneas o importas de tu galería.</li>
     <li>El nombre que le das a cada documento y sus fechas de creación y modificación.</li>
+    <li>El texto que la App detecta en tus documentos y las correcciones que le hagas.</li>
     <li>Tus preferencias de PDF (tamaño de hoja y calidad).</li>
   </ul>
   <p>Esta información <strong>no se envía a servidores del Desarrollador ni a terceros</strong> y no se usa para publicidad. Los PDF que generas solo salen de la App cuando tú decides compartirlos o guardarlos en otra ubicación.</p>
 
-  <h2>2. Escáner de documentos de Google</h2>
-  <p>Para escanear, la App usa el escáner de documentos de <strong>Google ML Kit</strong>, que proporciona Google Play Services. La cámara la controla ese componente, por lo que la App no solicita permiso de cámara. Las imágenes se procesan en el dispositivo. La primera vez, Google Play Services puede descargar el componente del escáner. Consulta la <a href="https://developers.google.com/ml-kit/terms" rel="noopener">información de ML Kit</a> para más detalles.</p>
+  <h2>2. Escáner y reconocimiento de texto de Google</h2>
+  <p>Para escanear, la App usa el escáner de documentos de <strong>Google ML Kit</strong>, que proporciona Google Play Services. La cámara la controla ese componente, por lo que la App no solicita permiso de cámara. Las imágenes se procesan en el dispositivo. La primera vez, Google Play Services puede descargar el componente del escáner. Para detectar el texto de tus documentos, la App usa el reconocimiento de texto de ML Kit, que también procesa las imágenes en el dispositivo; Google Play Services descarga su modelo. Consulta la <a href="https://developers.google.com/ml-kit/terms" rel="noopener">información de ML Kit</a> para más detalles.</p>
 
   <h2>3. Publicidad (Google AdMob)</h2>
   <p>La App usa Google AdMob para mostrar anuncios. El SDK de Google Mobile Ads puede recopilar y procesar automáticamente:</p>
