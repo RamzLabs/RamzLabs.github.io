@@ -49,7 +49,7 @@
       <p class="idiomas">Español · <a href="#en" hreflang="en">English</a></p>
     </div>
   </header>
-  <p class="fecha">Última actualización: 27 de noviembre de 2026</p>
+  <p class="fecha">Última actualización: 28 de noviembre de 2026</p>
 
   <p>Esta política explica qué información maneja la aplicación para Android <strong>Punto de Venta</strong> (en inglés, <em>Point of Sale</em>; la “App”), desarrollada por <strong>Oscar Ramírez (RamzLabs)</strong>, Guadalajara, Jalisco, México (el “Desarrollador”), y cómo se utiliza.</p>
 
@@ -59,13 +59,13 @@
       <li>La información de tu negocio (productos, inventario, compras, ventas, usuarios y ajustes) se guarda <strong>solo en el dispositivo que elegiste como servidor</strong>. No se sube a internet y el Desarrollador no la recibe ni la puede ver.</li>
       <li>Las estaciones (otros teléfonos o tabletas de tu negocio) se comunican con el servidor <strong>solo dentro de tu red Wi-Fi local</strong>.</li>
       <li>La App no requiere crear una cuenta. Los usuarios entran con un PIN que se guarda cifrado (como un resumen irreversible).</li>
-      <li>La cámara se usa solo para leer códigos de barras y QR; las imágenes no se guardan ni se envían.</li>
+      <li>La cámara se usa para leer códigos de barras y QR (esas imágenes no se guardan) y, si quieres, para tomar fotos de tus productos, que se guardan en el servidor.</li>
       <li>La App muestra anuncios de <strong>Google AdMob</strong>, que recopila ciertos datos del dispositivo (como el ID de publicidad) para mostrar y medir anuncios.</li>
     </ul>
   </div>
 
   <h2>1. Información de tu negocio</h2>
-  <p>Al usar la App capturas información como el nombre, la dirección, el teléfono y el RFC de tu negocio; productos, precios, costos, códigos de barras, categorías y existencias; proveedores (nombre, teléfono, correo y notas); compras, ventas, formas de pago, referencias de pago, descuentos y cancelaciones; y movimientos de inventario. Toda esta información se guarda en una base de datos en el almacenamiento privado de la App, <strong>en el dispositivo que configuraste como servidor</strong>.</p>
+  <p>Al usar la App capturas información como el nombre, la dirección, el teléfono y el RFC de tu negocio; productos, precios, costos, códigos de barras, imágenes, categorías y existencias; proveedores (nombre, teléfono, correo y notas); compras, ventas, formas de pago, referencias de pago, descuentos y cancelaciones; y movimientos de inventario. Toda esta información se guarda en una base de datos en el almacenamiento privado de la App, <strong>en el dispositivo que configuraste como servidor</strong>.</p>
   <p>Esta información <strong>no se envía a servidores del Desarrollador ni a terceros</strong> y no se usa para publicidad. La App no pide datos de tus clientes; si escribes datos de una persona en una nota o una referencia, eres responsable de tratarlos conforme a la legislación aplicable, incluida la Ley Federal de Protección de Datos Personales en Posesión de los Particulares.</p>
 
   <h2>2. Usuarios y PIN</h2>
@@ -79,8 +79,9 @@
     <li>Cada estación guarda en su almacenamiento privado la dirección del servidor, su llave de acceso y sus preferencias (impresora, idioma). No guarda una copia de la base de datos.</li>
   </ul>
 
-  <h2>4. Cámara y códigos de barras</h2>
-  <p>Si tocas el botón de escanear, la App usa la cámara para leer códigos de barras de productos y el QR de emparejamiento. La lectura se hace en el teléfono (con la biblioteca ML Kit de Google, que funciona sin conexión); las imágenes de la cámara no se guardan ni se envían. También puedes usar un lector de códigos USB o Bluetooth, que funciona como un teclado.</p>
+  <h2>4. Cámara, códigos de barras y fotos de productos</h2>
+  <p>Si tocas el botón de escanear, la App usa la cámara para leer códigos de barras de productos y el QR de emparejamiento. La lectura se hace en el teléfono (con la biblioteca ML Kit de Google, que funciona sin conexión); esas imágenes de la cámara no se guardan ni se envían. También puedes usar un lector de códigos USB o Bluetooth, que funciona como un teclado.</p>
+  <p>Un administrador puede ponerle una imagen a cada producto, tomándola con la cámara o eligiéndola con el selector de fotos de Android (la App solo recibe la foto que eliges, no tu galería). La imagen se reduce en el teléfono y se guarda en la base de datos del servidor, junto con el producto, para mostrarla en las cajas de tu negocio; se incluye en los respaldos y no se envía a internet. Usa fotos de productos, no de personas.</p>
 
   <h2>5. Impresora de tickets (Bluetooth)</h2>
   <p>Si configuras una impresora térmica Bluetooth, la App obtiene la lista de dispositivos ya emparejados con tu teléfono y le envía el contenido del ticket (datos del negocio, productos, importes, forma de pago y el nombre de quien atendió). La App no busca dispositivos cercanos para conocer tu ubicación. La impresora elegida se guarda solo en ese dispositivo.</p>
@@ -117,11 +118,11 @@
     <li><strong>Internet, estado de la red y del Wi-Fi:</strong> para comunicarse entre el servidor y las estaciones en tu red local y para cargar anuncios.</li>
     <li><strong>Recibir mensajes de difusión (multicast) en el Wi-Fi:</strong> para que las estaciones encuentren al servidor en la red.</li>
     <li><strong>Servicio en primer plano, notificaciones, mantener activo el dispositivo e iniciar al encender:</strong> para que el servidor siga atendiendo a las estaciones (solo en el dispositivo servidor).</li>
-    <li><strong>Cámara:</strong> para leer códigos de barras y QR, solo cuando tú abres el escáner.</li>
+    <li><strong>Cámara:</strong> para leer códigos de barras y QR y para tomar fotos de productos, solo cuando tú abres el escáner o tocas <em>Cámara</em>.</li>
     <li><strong>Dispositivos cercanos (Bluetooth):</strong> para conectarse a la impresora de tickets que elijas, solo cuando configuras o usas la impresora. No se usa para conocer tu ubicación.</li>
     <li><strong>ID de publicidad:</strong> lo usa AdMob según lo descrito arriba.</li>
   </ul>
-  <p>La App no lee tus contactos, ubicación, fotos, llamadas ni mensajes.</p>
+  <p>La App no lee tus contactos, ubicación, llamadas ni mensajes, y no pide acceso a tu galería: las imágenes de productos se eligen una por una con el selector de fotos de Android.</p>
 
   <h2>11. Conservación y eliminación de datos</h2>
   <p>La información del negocio permanece en el dispositivo servidor hasta que la borras desde la App (por ejemplo, un producto sin historial, un proveedor o una estación), hasta que borras los datos de la App desde los ajustes de Android o hasta que la desinstalas. Las ventas y compras canceladas se conservan para el historial. Como el Desarrollador no guarda copias, no puede recuperar tu información si se pierde: haz respaldos con frecuencia. Para los datos que trata Google, consulta la política de Google.</p>
@@ -149,7 +150,7 @@
       <p class="idiomas"><a href="#es" hreflang="es">Español</a> · English</p>
     </div>
   </header>
-  <p class="fecha">Last updated: November 27, 2026</p>
+  <p class="fecha">Last updated: November 28, 2026</p>
 
   <p>This policy explains what information the Android app <strong>Point of Sale</strong> (in Spanish, <em>Punto de Venta</em>; the “App”), developed by <strong>Oscar Ramírez (RamzLabs)</strong>, Guadalajara, Jalisco, Mexico (the “Developer”), handles and how it is used.</p>
 
@@ -159,13 +160,13 @@
       <li>Your business information (products, inventory, purchases, sales, users and settings) is stored <strong>only on the device you chose as the server</strong>. It is not uploaded to the internet, and the Developer does not receive it and cannot see it.</li>
       <li>Stations (other phones or tablets in your business) talk to the server <strong>only within your local Wi-Fi network</strong>.</li>
       <li>The App does not require an account. Users sign in with a PIN that is stored hashed (as an irreversible digest).</li>
-      <li>The camera is used only to read barcodes and QR codes; images are not saved or sent.</li>
+      <li>The camera is used to read barcodes and QR codes (those images are not saved) and, if you want, to take photos of your products, which are stored on the server.</li>
       <li>The App shows <strong>Google AdMob</strong> ads, which collect certain device data (such as the advertising ID) to serve and measure ads.</li>
     </ul>
   </div>
 
   <h2>1. Your business information</h2>
-  <p>When you use the App you enter information such as your business's name, address, phone number and tax ID; products, prices, costs, barcodes, categories and stock; suppliers (name, phone, email and notes); purchases, sales, payment methods, payment references, discounts and voids; and inventory movements. All of this is stored in a database in the App's private storage, <strong>on the device you set up as the server</strong>.</p>
+  <p>When you use the App you enter information such as your business's name, address, phone number and tax ID; products, prices, costs, barcodes, images, categories and stock; suppliers (name, phone, email and notes); purchases, sales, payment methods, payment references, discounts and voids; and inventory movements. All of this is stored in a database in the App's private storage, <strong>on the device you set up as the server</strong>.</p>
   <p>This information <strong>is not sent to the Developer's servers or to third parties</strong> and is not used for advertising. The App does not ask for your customers' data; if you type someone's data in a note or reference, you are responsible for handling it in accordance with the applicable law.</p>
 
   <h2>2. Users and PINs</h2>
@@ -179,8 +180,9 @@
     <li>Each station stores in its private storage the server address, its access key and its preferences (printer, language). It does not keep a copy of the database.</li>
   </ul>
 
-  <h2>4. Camera and barcodes</h2>
-  <p>If you tap the scan button, the App uses the camera to read product barcodes and the pairing QR code. Reading happens on the phone (with Google's ML Kit library, which works offline); camera images are not saved or sent. You can also use a USB or Bluetooth barcode scanner, which works like a keyboard.</p>
+  <h2>4. Camera, barcodes and product photos</h2>
+  <p>If you tap the scan button, the App uses the camera to read product barcodes and the pairing QR code. Reading happens on the phone (with Google's ML Kit library, which works offline); those camera images are not saved or sent. You can also use a USB or Bluetooth barcode scanner, which works like a keyboard.</p>
+  <p>An administrator can give each product an image, taking it with the camera or choosing it with the Android photo picker (the App only receives the photo you choose, not your gallery). The image is resized on the phone and stored in the server's database together with the product, to show it on your business's registers; it is included in backups and is not sent to the internet. Use photos of products, not of people.</p>
 
   <h2>5. Receipt printer (Bluetooth)</h2>
   <p>If you set up a Bluetooth thermal printer, the App gets the list of devices already paired with your phone and sends the receipt content to the printer (business details, products, amounts, payment method and the name of the cashier). The App does not scan for nearby devices to learn your location. The chosen printer is stored only on that device.</p>
@@ -217,11 +219,11 @@
     <li><strong>Internet, network and Wi-Fi state:</strong> for the server and stations to communicate on your local network and to load ads.</li>
     <li><strong>Receive Wi-Fi multicast/broadcast messages:</strong> so stations can find the server on the network.</li>
     <li><strong>Foreground service, notifications, keep the device awake and run at startup:</strong> so the server keeps serving the stations (server device only).</li>
-    <li><strong>Camera:</strong> to read barcodes and QR codes, only when you open the scanner.</li>
+    <li><strong>Camera:</strong> to read barcodes and QR codes and to take product photos, only when you open the scanner or tap <em>Camera</em>.</li>
     <li><strong>Nearby devices (Bluetooth):</strong> to connect to the receipt printer you choose, only when you set up or use the printer. It is not used to learn your location.</li>
     <li><strong>Advertising ID:</strong> used by AdMob as described above.</li>
   </ul>
-  <p>The App does not read your contacts, location, photos, calls or messages.</p>
+  <p>The App does not read your contacts, location, calls or messages, and does not ask for access to your gallery: product images are chosen one at a time with the Android photo picker.</p>
 
   <h2>11. Data retention and deletion</h2>
   <p>Business information stays on the server device until you delete it in the App (for example, a product with no history, a supplier or a station), until you clear the App's data in Android settings, or until you uninstall it. Voided sales and purchases are kept for the history. Because the Developer keeps no copies, it cannot recover your information if it is lost: back up often. For data processed by Google, see Google's policy.</p>
